@@ -23,8 +23,8 @@ pipeline {
 		}
 		stage("Execute system tests") {
 			steps {
-				sh "selenium-side-runner --server http://localhost:22222/wd/hub -c 'browserName=firefox' --base-url http://frontendcalculatorgroup27 Test/System/FunctionalTest.side"
-				sh "selenium-side-runner --server http://localhost:22222/wd/hub -c 'browserName=chrome' --base-url http://frontendcalculatorgroup27 Test/System/FunctionalTest.side"
+				sh "selenium-side-runner --server http://localhost:22222/wd/hub -c 'browserName=firefox' --base-url http://devops.setgo.dk:22222 Test/System/FunctionalTest.side"
+				sh "selenium-side-runner --server http://localhost:22222/wd/hub -c 'browserName=chrome' --base-url http://devops.setgo.dk:22222 Test/System/FunctionalTest.side"
 			}
 		}
 	}
