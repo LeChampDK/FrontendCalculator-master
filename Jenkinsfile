@@ -9,6 +9,7 @@ pipeline {
 					sh 'docker login -u ${USERNAME} -p ${PASSWORD}'
 				}
 				sh "docker push lechampdk/frontendcalculatorgroup2"
+				sh "docker run --rm -d --name frontendcalculatorgroup2 -p 22222:80 lechampdk/frontendcalculatorgroup2"
 			}
 		}
 	}
