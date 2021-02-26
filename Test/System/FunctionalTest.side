@@ -2,7 +2,7 @@
   "id": "7c0da02e-369b-42f4-8da9-d88e6f36d2c1",
   "version": "2.0",
   "name": "FrontendCalculator",
-  "url": "http://devops.setgo.dk:22222/",
+  "url": "http://localhost:22223/",
   "tests": [{
     "id": "eff6f9e6-c79d-45c1-a3ea-bd15d6cbe7e7",
     "name": "DivideTest",
@@ -10,7 +10,7 @@
       "id": "39552e05-6b03-4492-9c62-3e8979950179",
       "comment": "",
       "command": "open",
-      "target": "http://devops.setgo.dk:22222/",
+      "target": "http://localhost:22223/",
       "targets": [],
       "value": ""
     }, {
