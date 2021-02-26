@@ -139,7 +139,7 @@
       "id": "d7d01249-f0dd-4963-93b2-3787274f9947",
       "comment": "",
       "command": "open",
-      "target": "http://devops.setgo.dk:22222/",
+      "target": "http://localhost:22223/",
       "targets": [],
       "value": ""
     }, {
@@ -268,7 +268,7 @@
       "id": "5037f322-4e0b-41d1-9853-b68ab7686277",
       "comment": "",
       "command": "open",
-      "target": "http://devops.setgo.dk:22222/",
+      "target": "http://localhost:22223/",
       "targets": [],
       "value": ""
     }, {
@@ -397,7 +397,7 @@
       "id": "90a9edfa-4b02-4c68-9fe8-f9f05b8f790c",
       "comment": "",
       "command": "open",
-      "target": "http://devops.setgo.dk:22222/",
+      "target": "http://localhost:22223/",
       "targets": [],
       "value": ""
     }, {
@@ -466,7 +466,7 @@
       "id": "e024a70f-49fc-4b53-87b6-36949ece91d8",
       "comment": "",
       "command": "open",
-      "target": "http://devops.setgo.dk:22222/",
+      "target": "http://localhost:22223/",
       "targets": [],
       "value": ""
     }, {
@@ -535,7 +535,7 @@
       "id": "ff258f74-0afb-4cf3-b091-814e363e5be4",
       "comment": "",
       "command": "open",
-      "target": "http://devops.setgo.dk:22222/",
+      "target": "http://localhost:22223/",
       "targets": [],
       "value": ""
     }, {
