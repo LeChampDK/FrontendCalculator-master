@@ -722,6 +722,6 @@
     "timeout": 300,
     "tests": ["eff6f9e6-c79d-45c1-a3ea-bd15d6cbe7e7", "a56eefe5-19c5-49b8-87ca-0a54c7f64e38", "e720f572-c26a-46d0-84b0-b186d0a0dee1", "219393fa-fd29-4a97-a5a7-62cd106d4cc3", "1092898f-27e5-4e02-a4cc-dfed3cbd461f", "cbaa742f-d5d5-47c6-a33a-dc99cf8ade17"]
   }],
-  "urls": ["http://devops.setgo.dk:22222/"],
+  "urls": ["http://localhost:22223/"],
   "plugins": []
 }
