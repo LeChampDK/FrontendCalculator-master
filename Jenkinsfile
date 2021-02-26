@@ -15,7 +15,7 @@ pipeline {
 		stage("Selenium grid setup") {
 			steps {
 				sh "docker network create SEG2"
-				sh "docker run -d --rm -p 22222:4444 --net=SEG2 --name selenium-hubg2 selenium/hub"
+				sh "docker run -d --rm -p 22223:4444 --net=SEG2 --name selenium-hubg2 selenium/hub"
 				sh "docker run -d --rm --net=SEG2 -e HUB_HOST=selenium-hubg2 --name selenium-node-firefoxg2 selenium/node-firefox"
 				sh "docker run -d --rm --net=SEG2 -e HUB_HOST=selenium-hubg2 --name selenium-node-chromeg2 selenium/node-chrome"
 				sh "docker run -d --rm --net=SEG2 --name frontendcalculatorgroup2 lechampdk/frontendcalculatorgroup2"
@@ -23,8 +23,8 @@ pipeline {
 		}
 		stage("Execute system tests") {
 			steps {
-				sh "selenium-side-runner --server http://localhost:22222/wd/hub -c 'browserName=firefox' --base-url http://devops.setgo.dk:22222 Test/System/FunctionalTest.side"
-				sh "selenium-side-runner --server http://localhost:22222/wd/hub -c 'browserName=chrome' --base-url http://devops.setgo.dk:22222 Test/System/FunctionalTest.side"
+				sh "selenium-side-runner --server http://localhost:22223/wd/hub -c 'browserName=firefox' --base-url http://frontendcalculatorgroup2 Test/System/FunctionalTest.side"
+				sh "selenium-side-runner --server http://localhost:22223/wd/hub -c 'browserName=chrome' --base-url http://frontendcalculatorgroup2 Test/System/FunctionalTest.side"
 			}
 		}
 	}
